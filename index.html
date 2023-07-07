@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css"/>
+        <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    </head>
+        <title>reviewMate</title>
+    </head>
+    <body>
+      <!-- 메인 페이지 -->
+      <section id="main">
+        <div id="editor"></div>
+        <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+        <script>
+          const editor = new toastui.Editor({
+              el: document.querySelector('#editor'),
+              previewStyle: 'vertical',
+              height: '500px',
+              initialValue: '안녕'
+          });
+      </script>
+          <button onclick="js:startQA()" class="container start-button">
+              시작하기
+          </button>
+      </section>
+
+    </body>
+</html>
